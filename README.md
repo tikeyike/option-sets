@@ -12,6 +12,7 @@
   - [Making Changes](#making-changes)
   - [Configuring Options Sets](#configuring-options-sets)
   - [Using Options Sets](#using-options-sets)
+  - [Handy Hint](#handy-hint)
   - [Finishing Notes](#finishing-notes)
 
 ## Getting Started
@@ -102,7 +103,13 @@ You will be asked to type in a name for your API subdomain — you can call it w
 
 ## Project Structure
 
-For this guide, I’ve created a folder with 3 option sets to use as an example - You can download or clone it [here](www.github.com).
+For this guide, I’ve created a folder with 3 option sets to use as an example - You can download or clone it [here](https://github.com/tikeyike/option-sets).
+
+<center>
+
+![](images/github-download.png)
+
+</center>
 
 Once you have cloned/downloaded and exacted the file, now you should have a folder called 📁 `option-sets` with 3 sub-folders, and in each folder there is an index.js file.
 
@@ -255,6 +262,30 @@ Now that you have deploy your option sets, you can now go into the form builder 
 </center>
 
 Click on `USE PREDEFINED` and use the dropdown below to select the option set you have just created.
+
+## Handy Hint
+
+If you would like to quickly format a list for your option sets - one way you can do this is by using a spreadsheet program such as Microsoft Excel or Google Sheets and use this formula to format your list:
+
+```
+="{ label: `"&A1&"`, value: `"&A1&"` },"
+```
+
+Lets say you have a table like this:
+
+<center>
+
+![](images/excel-example.png)
+
+</center>
+
+Paste the formula into B1 and press enter. Now hover over the bottom right of the cell and drag down.
+
+<center>
+
+![](images/excel-demo.gif)
+
+</center>
 
 ## Finishing Notes
 
