@@ -165,7 +165,7 @@ Running this command will create a new file on your current folder (`option-sets
 
 Note: This file maybe be hidden - you would need to change your settings on your computer to show hidden files if you cannot find the 📄 `.blinkmrc.json` file.
 
-Open up the `.blinkmrc.json` file and add in:
+Open up the 📄 `.blinkmrc.json` file and add in:
 
 ```
 "cors": true,
