@@ -48,7 +48,7 @@ npm -v
 To install the CLI tools, open a terminal (On Windows, this can be `cmd.exe` and on MacOS, this can be the `Terminal.app`) and type in the following command:
 
 ```
-npm install -g @blinkmobile/cli @blinkmobile/identity-cli @blinkmobile/server-cli
+npm install -g @oneblink/cli
 ```
 
 **Note: if you are using Windows, you might have to close your terminal (`cmd.exe`) and open it up again for the changes to take effect.**
@@ -58,10 +58,18 @@ npm install -g @blinkmobile/cli @blinkmobile/identity-cli @blinkmobile/server-cl
 Now that you have `identity-cli` installed, you can go back to the terminal and type in:
 
 ```
-bm identity login
+oneblink login
 ```
 
-A browser window will open and you'll be able to select your identity provider. Usually this would be your work Gmail/Gsuite account (click the login with Google button). If not, just login with your OneBlink username and password.
+OR
+
+```
+civicplus login
+```
+
+For CivicPlus Users
+
+A browser window will open and you'll be able to select your identity provider. Usually this would be your work Gmail/Gsuite account (click the login with Google button). If not, just login with your OneBlink or CivicPlus username and password.
 
 <center>
 
@@ -150,7 +158,13 @@ This is going to create a 📄 `package.json` file in the `option-sets` folder.
 Now type in:
 
 ```
-bm server scope {YOUR API URL}
+oneblink api scope {YOUR API URL}
+```
+
+OR
+
+```
+civicplus api scope {YOUR API URL}
 ```
 
 <center>
@@ -190,7 +204,13 @@ So it should look something like this:
 Now you can go back to the terminal and type in:
 
 ```
-bm server deploy
+oneblink api deploy
+```
+
+OR
+
+```
+civicplus api deploy
 ```
 
 Then press `y`
@@ -204,7 +224,13 @@ Future deployments (for this project) should only take about 10 to 20 seconds.
 If you make changes or add more option sets (following the same [folder/file structure](#project-structure)) - all you need to do is to [open `option-sets` folder in your terminal](#project-structure) again, and type in:
 
 ```
-bm server deploy
+oneblink api deploy
+```
+
+OR
+
+```
+civicplus api deploy
 ```
 
 And press `y`
